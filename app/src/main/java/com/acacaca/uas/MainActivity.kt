@@ -1,4 +1,4 @@
-package com.acacaca.uas
+package com.pinggo.uas
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -28,7 +28,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.acacaca.uas.ui.theme.UASTheme
+import com.pinggo.uas.ui.theme.UASTheme
 
 @Composable
 fun LoginScreen(onLogin: () -> Unit = {}) {
@@ -38,14 +38,14 @@ fun LoginScreen(onLogin: () -> Unit = {}) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF4CAF50)), // Warna latar belakang hijau
+            .background(Color(0xFF4CAF50)),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         Image(
-            painter = painterResource(R.drawable.pinggo_ganteng), // Gambar latar belakang atas
+            painter = painterResource(R.drawable.pinggo_ganteng), 
             contentDescription = null,
-            modifier = Modifier.size(250.dp) // Sesuaikan ukuran gambar
+            modifier = Modifier.size(250.dp) 
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -58,7 +58,7 @@ fun LoginScreen(onLogin: () -> Unit = {}) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Image(
-                painter = painterResource(R.drawable.gpt), // Gambar logo
+                painter = painterResource(R.drawable.gpt), 
                 contentDescription = null,
                 modifier = Modifier.size(50.dp)
             )
